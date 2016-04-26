@@ -1,6 +1,21 @@
+.home{
+	/* This image will be displayed fullscreen */
+	background:url('img/Kayle.jpg') no-repeat center center;
+
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+
+	/* The Magic */
+	background-size:cover;
+}
+.home:before{
+	content: ' ';
+	background: rgba(58, 110, 165, 0.7);
+}
 body{
 	background-color: #f9f9f9;
 	color: #333;
+	min-height: 100%;
 }
 
 nav{
@@ -10,6 +25,38 @@ nav{
 
 nav .brand-logo{
 	color: #2D882D;
+}
+.home{
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+}
+.home .imagen{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.home .imagen:before{
+	content: ' ';
+	background: rgba(58, 110, 165, 0.7);
+}
+.home .imagen img {
+	max-width: 100%;
+}
+.home .content{
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	color: white;
+}
+.btn{
+	background-color: #116611;
+}
+.btn:hover{
+	background-color: #55AA55;
 }
 .tabs{
 	background-color: #AA3939;
@@ -32,7 +79,8 @@ footer.page-footer{
 	background-color: #226666;
 }
 .collection .collection-item{
-	background-color: #669999;
+	background-color: #fff;
+	color: #333;
 }
 
 .collection-item>i.material-icons {
