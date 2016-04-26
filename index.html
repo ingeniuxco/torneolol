@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html ng-app="torneoApp">
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+		<link rel="stylesheet" href="app.css">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8">
+		<title>2do Torneo LoL Univalle Tuluá</title>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<!-- <script src="app.js"></script> -->
+		<script>
+			angular.module('torneoApp', [])
+			  .controller('TeamController', function($scope, $http) {
+			     $http.get('univallelol.json').success(function(data) {
+			         $scope.equipos = data;
+			     });
+			  });
+		</script>
+	</head>
+
+	<body ng-controller="TeamController">
+		<nav class="z-depth-0">
+		  <div class="nav-wrapper">
+		    <a href="http://ingeniux.co" class="brand-logo center">Ingeniux</a>
+		  </div>
+		</nav>
+		<div class="container">
+			<h1 class="center-align">Torneo LoL Univalle</h1>
+			<div class="section">
+				<h2>Estadísticas de grupos</h2>
+				<div class="row">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a href="#grupoA">Grupo A</a></li>
+							<li class="tab col s3"><a href="#grupoB">Grupo B</a></li>
+							<li class="tab col s3"><a href="#grupoC">Grupo C</a></li>
+						</ul>
+					</div>
+					<div id="grupoA" class="col s12">
+						<table class="highlight centered responsive-table z-depth-1">
+							<colgroup>
+							    <col style="width: 10%">
+							    <col style="width: 70%">
+							    <col style="width: 20%">
+							</colgroup>
+					        <thead>
+					          <tr>
+					          	  <th data-field="posicion">#</th>
+					              <th data-field="nombre">Nombre</th>
+					              <th data-field="puntos">Puntos</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr ng-repeat="equipo in equipos | filter:{grupo:'A'} | orderBy:'puntos'">
+					          	<td>{{equipo.posicion}}</td>
+					            <td>{{equipo.nombre}}</td>
+					            <td>{{equipo.puntos}}</td>
+					          </tr>
+					        </tbody>
+					      </table>
+					</div>
+					<div id="grupoB" class="col s12">
+						<table class="highlight centered responsive-table z-depth-1">
+							<colgroup>
+							    <col style="width: 10%">
+							    <col style="width: 70%">
+							    <col style="width: 20%">
+							</colgroup>
+					        <thead>
+					          <tr>
+					          	  <th data-field="posicion">#</th>
+					              <th data-field="nombre">Nombre</th>
+					              <th data-field="puntos">Puntos</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr ng-repeat="equipo in equipos | filter:{grupo:'B'} | orderBy:'puntos'">
+					          	<td>{{equipo.posicion}}</td>
+					            <td>{{equipo.nombre}}</td>
+					            <td>{{equipo.puntos}}</td>
+					          </tr>
+					        </tbody>
+					      </table>
+					</div>
+					<div id="grupoC" class="col s12">
+						<table class="highlight centered responsive-table z-depth-1">
+							<colgroup>
+							    <col style="width: 10%">
+							    <col style="width: 70%">
+							    <col style="width: 20%">
+							</colgroup>
+					        <thead>
+						       <tr>
+					          	  <th data-field="posicion">#</th>
+					              <th data-field="nombre">Nombre</th>
+					              <th data-field="puntos">Puntos</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr ng-repeat="equipo in equipos | filter:{grupo:'C'} | orderBy:'puntos'">
+					          	<td>{{equipo.posicion}}</td>
+					            <td>{{equipo.nombre}}</td>
+					            <td>{{equipo.puntos}}</td>
+					          </tr>
+					        </tbody>
+				      </table>
+				</div>
+			</div>
+			</div>
+			<div class="section">
+			<h2>Equipos</h2>
+			<div class="divider"></div>
+				<div class="row">
+					<div class="col l4 s12">
+						<h3 class="center-align">Grupo A</h3>
+						<ul class="collapsible popout" data-collapsible="accordion">
+						  <li ng-repeat="equipo in equipos | filter:{grupo:'A'}">
+						    <div class="collapsible-header"><i class="material-icons">people</i>{{equipo.nombre}}</div>
+						    <div class="collapsible-body">
+						    	<ul class="collection">
+						    	  <li class="collection-item" ng-repeat="jugador in equipo.jugadores"><i class="material-icons">person</i>{{jugador}}</li>
+						    	</ul>
+						    </div>
+						  </li>
+						</ul>
+					</div>
+					<div class="col l4 s12">
+						<h3 class="center-align">Grupo B</h3>
+						<ul class="collapsible popout" data-collapsible="accordion">
+						  <li ng-repeat="equipo in equipos | filter:{grupo:'B'}">
+						    <div class="collapsible-header"><i class="material-icons">people</i>{{equipo.nombre}}</div>
+						    <div class="collapsible-body">
+						    	<ul class="collection">
+						    	  <li class="collection-item" ng-repeat="jugador in equipo.jugadores"><i class="material-icons">person</i>{{jugador}}</li>
+						    	</ul>
+						    </div>
+						  </li>
+						</ul>
+					</div>
+					<div class="col l4 s12">
+						<h3 class="center-align">Grupo C</h3>
+						<ul class="collapsible popout" data-collapsible="accordion">
+						  <li ng-repeat="equipo in equipos | filter:{grupo:'C'}">
+						    <div class="collapsible-header"><i class="material-icons">people</i>{{equipo.nombre}}</div>
+						    <div class="collapsible-body">
+						    	<ul class="collection">
+						    	  <li class="collection-item" ng-repeat="jugador in equipo.jugadores"><i class="material-icons">person</i>{{jugador}}</li>
+						    	</ul>
+						    </div>
+						  </li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+				
+			</div>
+
+
+		</div>
+
+		<footer class="page-footer">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col s12">
+		        <h5 class="white-text">Ingeniux</h5>
+		        <p class="grey-text text-lighten-4">Grupo de Usuarios de Software Libre - Universidad del Valle sede Tuluá.</p>
+				<ul class="social-media">
+					<li><a target="_blank" href="https://www.facebook.com/ingeniuxco"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
+					<li><a target="_blank" href="https://twitter.com/ingeniuxco"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a></li>
+					<li><a target="_blank" href="https://www.github.com/ingeniuxco"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x"></i></span></a></li>
+					<li><a target="_blank" href="https://ingeniuxco.wordpress.com"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-wordpress fa-stack-1x"></i></span></a></li>
+				</ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="footer-copyright">
+		    <div class="container">
+		    © 2016 Ingeniux
+		    </div>
+		  </div>
+		</footer>
+
+		
+		<!--Import jQuery before materialize.js-->
+		
+	</body>
+</html>

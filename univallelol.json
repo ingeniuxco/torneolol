@@ -1,0 +1,194 @@
+[
+  {
+    "nombre"    : "Hera Gaming",
+    "tag"       : "HG",
+    "email"     : "sebas.916@hotmail.com",
+    "grupo"     : "A",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "XdrackoX",
+      "xXCalavericoXx",
+      "yona flower",
+      "Panini23",
+      "Snoowdark",
+      "yepex12"
+    ]
+  },
+  {
+    "nombre"    : "Phantom Gaming",
+    "tag"       : "PHG",
+    "email"     : "barrerac54@gmail.com",
+    "grupo"     : "A",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "xXlmozeratzulXx",
+      "JhonHardPlay",
+      "blackjackal",
+      "yeahcristh",
+      "legolas65",
+      "yepex12"
+    ]
+  },
+  {
+    "nombre"    : "WAN",
+    "tag"       : "WAN",
+    "email"     : "jhojan-alexander@hotmail.com",
+    "grupo"     : "A",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "King Alex",
+      "DarkStark",
+      "JessiCorrea",
+      "Mrpride",
+      "lXDestructionXl",
+      "N/A"
+    ]
+  },
+  {
+    "nombre"    : "Give Me Challenjour",
+    "tag"       : "GMC",
+    "email"     : "Mao28-@hotmail.com",
+    "grupo"     : "A",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "llZorakll",
+      "Forestmav",
+      "iZero",
+      "Stike9",
+      "TrashMyThresh",
+      "HenryGutierrez"
+    ]
+  },
+  {
+    "nombre"    : "Havkos Gaming",
+    "tag"       : "HVK",
+    "email"     : "maurevelo118@gmail.com",
+    "grupo"     : "B",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "Odah",
+      "valejo",
+      "darrent ",
+      "star zdaimoun",
+      "bughuull",
+      "srscott"
+    ]
+  },
+  {
+    "nombre"    : "Omega Squad",
+    "tag"       : "OMG",
+    "email"     : "juliand_d@hotmail.com",
+    "grupo"     : "B",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "DiazRC",
+      "KingRegnierr",
+      "cdeRC ",
+      "Panocha",
+      "Cubo",
+      "Chuleta PDF"
+    ]
+  },
+  {
+    "nombre"    : "The Warlord Team",
+    "tag"       : "TWL",
+    "email"     : "felipemarin200@gmail.com",
+    "grupo"     : "B",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "MasterKiller985",
+      "TWL JonSeth",
+      "TWL ChiEsSi",
+      "TWL Krazzy",
+      "TWL Lucky",
+      "C5G Santoryuu"
+    ]
+  },
+  {
+    "nombre"    : "FOCUS",
+    "tag"       : "FOC",
+    "email"     : "rslj_25@hotmail.com",
+    "grupo"     : "B",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "kanopia",
+      "i psyduck i ",
+      "juancvelez",
+      "vegas25 ",
+      "BurdoG",
+      "shangui"
+    ]
+  },
+  {
+    "nombre"    : "MetaHuntersGaming",
+    "tag"       : "MHG",
+    "email"     : "sebastian131997@hotmail.com",
+    "grupo"     : "C",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "Billy Y",
+      "Lord7",
+      "ancrist021",
+      "Lady Crownguard",
+      "Elcusho",
+      "AmeRouge"
+    ]
+  },
+  {
+    "nombre"    : "Team Solo Mil",
+    "tag"       : "TSM",
+    "email"     : "juanma1993.2@gmail.com",
+    "grupo"     : "C",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "Darkness x",
+      "Sakasukii",
+      "Renzo",
+      "SandHog",
+      "Tywin Lannister",
+      "Darcksoull"
+    ]
+  },
+  {
+    "nombre"    : "404 Team Not Found",
+    "tag"       : "404",
+    "email"     : "Sergio.Esteban94@hotmail.com",
+    "grupo"     : "C",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "Kadencoh",
+      "Alejo Sock",
+      "Dktrenix",
+      "Axl Stormrage",
+      "Nagazaki",
+      "N/A"
+    ]
+  },
+  {
+    "nombre"    : "NotLeyHorse",
+    "tag"       : "NLH",
+    "email"     : "juegosinter@hotmail.com",
+    "grupo"     : "C",
+    "puntos"    : "0",
+    "posicion"  : "1",
+    "jugadores" : [
+      "souldreanss",
+      "7DS sloth",
+      "SrShur4",
+      "matapajarosxd2",
+      "hooksAge",
+      "N/A"
+    ]
+  }
+]
