@@ -1,6 +1,6 @@
 .home{
 	/* This image will be displayed fullscreen */
-	background-image: url('img/Kayle.jpg'), linear-gradient(#eb01a5, #d13531);
+	background-image: url('img/Kayle.jpg');
 	background-repeat: no-repeat;
 	background-attachment: center;
 	background-position: center;
@@ -61,6 +61,12 @@ h1{
 	width: 100%;
 	text-shadow: 4px 4px 2px #0E0E0E;
 }
+.section{
+	padding: 1rem;
+}
+.section:hover{
+	background-color: #f9f9f9;
+}
 .btn{
 	background-color: #116611;
 }
@@ -90,6 +96,9 @@ footer.page-footer{
 }
 .collapsible-header{
 	background-color: #226666;
+}
+.collapsible-header:hover {
+    background-color: #407F7F;
 }
 .collection .collection-item{
 	background-color: #fff;
