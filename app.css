@@ -1,6 +1,9 @@
 .home{
 	/* This image will be displayed fullscreen */
-	background:url('img/Kayle.jpg') no-repeat center center;
+	background-image: url('img/Kayle.jpg'), linear-gradient(#eb01a5, #d13531);
+	background-repeat: no-repeat;
+	background-attachment: center;
+	background-position: center;
 
 	/* Ensure the html element always takes up the full height of the browser window */
 	min-height:100%;
