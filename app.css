@@ -47,15 +47,6 @@ nav .brand-logo:hover{
 	overflow: hidden;
 	position: relative;
 	height: 100vh;
-	-webkit-transition: all .5s ease-in-out 0s;
-	-o-transition: all .5s ease-in-out 0s;
-	transition: all .5s ease-in-out 0s;
-}
-.home:hover{
-	-webkit-transition: all .5s ease-in-out 0s;
-	-o-transition: all .5s ease-in-out 0s;
-	transition: all .5s ease-in-out 0s;
-	opacity: 0.7;
 }
 .home .imagen{
 	position: absolute;
