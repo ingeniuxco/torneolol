@@ -31,7 +31,7 @@
 	<body ng-controller="TeamController">
 		<nav class="z-depth-0">
 		  <div class="nav-wrapper">
-		    <a href="http://ingeniux.co" class="brand-logo center">Ingeniux</a>
+		    <a target="_blank" href="http://ingeniux.co" class="brand-logo center">Ingeniux</a>
 		  </div>
 		</nav>
 
@@ -41,8 +41,8 @@
 		</div>
 		<div class="container z-depth-1">
 			<div class="section center-align">
-				<a class="btn" href="http://twitch.tv/areddevil7"><i class="fa fa-twitch fa-lg"></i>Transmisiones</a>
-				<a href="https://docs.google.com/document/d/1i2E74HQVgPbTkOOwcE8uZQQRWC4vW8T_mhBFaUnTObM/edit?usp=sharing" class="btn"><i class="fa fa-list fa-lg"></i>Reglamento</a>
+				<a target="_blank" class="btn" href="http://twitch.tv/areddevil7"><i class="fa fa-twitch fa-lg"></i>Transmisiones</a>
+				<a target="_blank" href="https://docs.google.com/document/d/1i2E74HQVgPbTkOOwcE8uZQQRWC4vW8T_mhBFaUnTObM/edit?usp=sharing" class="btn"><i class="fa fa-list fa-lg"></i>Reglamento</a>
 			</div>
 			<div class="section">
 				<h3 class="center-align">Estadísticas de grupos</h3>
@@ -70,7 +70,7 @@
 					        </thead>
 					        <tbody>
 					          <tr ng-repeat="equipo in equipos | filter:{grupo:'A'} | orderBy:'puntos'">
-					          	<td>{{equipo.posicion}}</td>
+					          	<td>{{$index + 1}}</td>
 					            <td>{{equipo.nombre}}</td>
 					            <td>{{equipo.puntos}}</td>
 					          </tr>
@@ -93,7 +93,7 @@
 					        </thead>
 					        <tbody>
 					          <tr ng-repeat="equipo in equipos | filter:{grupo:'B'} | orderBy:'puntos'">
-					          	<td>{{equipo.posicion}}</td>
+					          	<td>{{$index + 1}}</td>
 					            <td>{{equipo.nombre}}</td>
 					            <td>{{equipo.puntos}}</td>
 					          </tr>
@@ -115,8 +115,8 @@
 					          </tr>
 					        </thead>
 					        <tbody>
-					          <tr ng-repeat="equipo in equipos | filter:{grupo:'C'} | orderBy:'puntos'">
-					          	<td>{{equipo.posicion}}</td>
+					          <tr ng-repeat="equipo in equipos | filter:{grupo:'C'} | orderBy:'-puntos'">
+					          	<td>{{$index + 1}}</td>
 					            <td>{{equipo.nombre}}</td>
 					            <td>{{equipo.puntos}}</td>
 					          </tr>
