@@ -5,6 +5,7 @@
     "email"     : "sebas.916@hotmail.com",
     "grupo"     : "A",
     "puntos"    : "2",
+    "kda"       : "2.442",
     "jugadores" : [
       "XdrackoX",
       "xXCalavericoXx",
@@ -20,6 +21,7 @@
     "email"     : "barrerac54@gmail.com",
     "grupo"     : "A",
     "puntos"    : "0",
+    "kda"       : "0.342",
     "jugadores" : [
       "xXlmozeratzulXx",
       "JhonHardPlay",
@@ -35,6 +37,7 @@
     "email"     : "jhojan-alexander@hotmail.com",
     "grupo"     : "A",
     "puntos"    : "1",
+    "kda"       : "3.208",
     "jugadores" : [
       "King Alex",
       "DarkStark",
@@ -50,6 +53,7 @@
     "email"     : "Mao28-@hotmail.com",
     "grupo"     : "A",
     "puntos"    : "3",
+    "kda"       : "18.5",
     "jugadores" : [
       "llZorakll",
       "Forestmav",
@@ -65,6 +69,7 @@
     "email"     : "maurevelo118@gmail.com",
     "grupo"     : "B",
     "puntos"    : "3",
+    "kda"       : "9.387",
     "jugadores" : [
       "Odah",
       "Valejo",
@@ -80,6 +85,7 @@
     "email"     : "juliand_d@hotmail.com",
     "grupo"     : "B",
     "puntos"    : "1",
+    "kda"       : "2.107",
     "jugadores" : [
       "DiazRC",
       "KingRegnierr",
@@ -95,6 +101,7 @@
     "email"     : "felipemarin200@gmail.com",
     "grupo"     : "B",
     "puntos"    : "1",
+    "kda"       : "2.111",
     "jugadores" : [
       "MasterKiller985",
       "TWL JonSeth",
@@ -110,6 +117,7 @@
     "email"     : "rslj_25@hotmail.com",
     "grupo"     : "B",
     "puntos"    : "1",
+    "kda"       : "1.649",
     "jugadores" : [
       "Kanopia",
       "I psyduck I",
@@ -125,6 +133,7 @@
     "email"     : "sebastian131997@hotmail.com",
     "grupo"     : "C",
     "puntos"    : "0",
+    "kda"       : "1.015",
     "jugadores" : [
       "Billy Y",
       "Lord7",
@@ -140,6 +149,7 @@
     "email"     : "juanma1993.2@gmail.com",
     "grupo"     : "C",
     "puntos"    : "1",
+    "kda"       : "2.489",
     "jugadores" : [
       "Darkness x",
       "Sakasukii",
@@ -155,6 +165,7 @@
     "email"     : "Sergio.Esteban94@hotmail.com",
     "grupo"     : "C",
     "puntos"    : "3",
+    "kda"       : "11.166",
     "jugadores" : [
       "Kadencoh",
       "Alejo Sock",
@@ -169,7 +180,8 @@
     "tag"       : "NLH",
     "email"     : "juegosinter@hotmail.com",
     "grupo"     : "C",
-    "puntos"    : "1",
+    "puntos"    : "2",
+    "kda"       : "2.213",
     "jugadores" : [
       "souldreanss",
       "7DS sloth",
